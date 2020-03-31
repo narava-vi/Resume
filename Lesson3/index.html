@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href=".style.css">
+
+</head>
+    <body>
+        
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        .big-square {
+          display: flex;
+          width: 800px;
+          height: 600px;
+          border: 1px solid black;
+        }
+        .left {
+          border-right: 1px solid black;
+          flex-grow: 1;
+          flex-basis: 50%;
+                  }
+        .right {
+          border-right: 1px solid black;
+          flex-grow: 1;
+          flex-basis: 50%;
+            
+                  }
+      
+        .top  {
+            height: 50%;
+            border-bottom: 1px solid black;
+            display: flex;  
+                     
+        }
+        .buttom  {
+            height: 50%;
+            display: flex; 
+         }
+         .color-block {
+             background-color: lightpink;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+         }
+      </style>
+      <div class="big-square" >
+      <div class="left"></div>
+      <div class="right">
+          <div class="top">
+            <div class="left color-block">111111111</div>
+            <div class="right "></div>
+          </div>
+          <div class="buttom">
+            <div class="left "></div>
+            <div class="right color-block">111111111</div>
+          </div>
+      </div>
+      </div>
+    </body>
